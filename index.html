@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>Personal coach</title>
+	<link rel="stylesheet" href="lib/css/framework7.material.min.css">
+	<link rel="stylesheet" href="lib/css/framework7.material.colors.min.css">
+	<link rel="stylesheet" href="lib/css/mystyles.css">
+</head>
+<body>
+
+	<div class="panel-overlay"></div>
+
+		<div class="panel panel-left panel-cover">
+			<div class="content-block">
+				<div class="list-block">
+					<ul>
+						<li>
+							<a href="trainings.html" class="item-link close-panel" data-context-name="trainings">
+								<div class="item-content">
+									<div class="item-inner">
+										<div class="item-title">
+											Расписание
+										</div>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item-link item-content">
+								<div class="item-inner">
+									Продукты
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="trainings.html" class="item-link item-content" data-context-name="trainings">
+								<div class="item-inner">
+									Тренировки
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item-link item-content">
+								<div class="item-inner">
+									Настройки
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="left">
+				<a href="#" class="link add-element" onclick="addList();">
+					<i class="icon">+</i>
+				</a>
+			</div>
+			<div class="center">Тренировки</div>
+			<div class="right">
+				<a href="#" data-panel="left" class="link icon-only open-panel">
+					<i class="icon icon-bars"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="views">
+		<div class="view view-main">
+
+			<div data-page="home" class="pages page">
+				<form data-search-list=".list-block-search" data-search-in=".item-title" class="searchbar searchbar-init">
+					<div class="searchbar-input">
+						<input type="search" placeholder="Search"><a href="#" class="searchbar-clear"></a>
+					</div>
+				</form>
+
+				<div class="searchbar-overlay"></div>
+				
+
+				<div class="page-content">
+					<div class="content-block searchbar-not-found">
+						<div class="content-block-inner">
+							Ничего не найдено
+						</div>
+					</div>
+
+
+
+					<div class="list-block list-block-search searchbar-found">
+						<div class="list-group">
+							<ul id="add-favourite-there">
+								<li class="list-group-title" id="add-favourite-after-that">Избранное</li>
+							</ul>
+						</div>
+						<div class="list-group">
+							<ul id="add-there">
+								<li class="list-group-title" id="add-others-after-that">Всё</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<script type="text/javascript" src="jquery-1.11.2.js"></script>
+	<script type="text/javascript" src="lib/framework7.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
