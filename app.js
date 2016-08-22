@@ -15,8 +15,6 @@ var mainView = myApp.addView('.view-main', {
 
 var productToEdit;
 
-// comment for git
-
 function addList ()
 {
 	console.log("addList");
